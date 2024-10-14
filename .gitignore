@@ -1,0 +1,14 @@
+# Ignore Maven or Gradle directories
+target/
+build/
+
+# Ignore class files and logs
+*.class
+*.log
+
+# Ignore IDE-specific files (for IntelliJ IDEA, Eclipse, etc.)
+*.iml
+.idea/
+*.project
+.classpath
+ 
