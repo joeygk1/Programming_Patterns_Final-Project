@@ -36,25 +36,25 @@ This is a ***group project for up to two students***, though it can also be comp
 
 ## 5. Steps to follow
 
-~~1. Create UML diagrams (ER, class, and activity diagrams).~~
-2. Create and populate the database.
-3. Design the user interface (GUI or Console).
-~~4. Implement the MVC architecture.~~
-5. Develop the core classes.
-6. Write test class(es) using JUnit to test the controller methods. 
-8. Verify if CRUD operations implemented by the methods correctly update the database.
-9. Add internationalization features using at least two Locale objects.
-10. Refactor the code to incorporate design patterns.
+1.~~1. Create UML diagrams (ER, class, and activity diagrams).~~
+1. Create and populate the database.
+1. Design the user interface (GUI or Console).
+1.~~4. Implement the MVC architecture.~~
+1. Develop the core classes.
+1. Write test class(es) using JUnit to test the controller methods. 
+1. Verify if CRUD operations implemented by the methods correctly update the database.
+1. Add internationalization features using at least two Locale objects.
+1. Refactor the code to incorporate design patterns.
 
 ## 6. Project Deliverables
 
 ### 6.1 Deliverable 1 - Project Description:
 
 Submit a project idea, addressing the following points:
-~~* Scenario: Explain the scenario under which your project will operate.~~
-~~* Design Paradigm: List the functionalities you plan to demonstrate.~~
-~~* Expected Output: Describe the expected results and the actions the user can perform with your application.~~
-~~* Git Repository: Initialize a Maven project with valid `.gitignore`, and a `README.md` file for a project description. Create a `doc` folder which contains diagrams and the the Deliverable 1 PDF.~~
+*~~Scenario: Explain the scenario under which your project will operate.~~
+*~~* Design Paradigm: List the functionalities you plan to demonstrate.~~
+*~~* Expected Output: Describe the expected results and the actions the user can perform with your application.~~
+*~~* Git Repository: Initialize a Maven project with valid `.gitignore`, and a `README.md` file for a project description. Create a `doc` folder which contains diagrams and the the Deliverable 1 PDF.~~
 
 ### 6.2 Deliverable 2 - 50% Checkpoint:
 
