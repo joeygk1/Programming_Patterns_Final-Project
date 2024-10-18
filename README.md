@@ -51,6 +51,7 @@ This is a ***group project for up to two students***, though it can also be comp
 ### 6.1 Deliverable 1 - Project Description:
 
 Submit a project idea, addressing the following points:
+
 *~~Scenario: Explain the scenario under which your project will operate.~~
 *~~Design Paradigm: List the functionalities you plan to demonstrate.~~
 *~~Expected Output: Describe the expected results and the actions the user can perform with your application.~~
