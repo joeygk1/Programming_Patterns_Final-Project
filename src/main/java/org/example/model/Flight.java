@@ -12,7 +12,7 @@ public class Flight {
         this.destination = destination;
         this.departureDate = departureDate;
     }
-
+    //getters and setters
     public int getFlightId() {
         return flightId;
     }

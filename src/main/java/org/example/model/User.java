@@ -11,6 +11,7 @@ public abstract class User {
         this.password = password;
     }
 
+    //getters & setters
     public int getUserId() {
         return userId;
     }

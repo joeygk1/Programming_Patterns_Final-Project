@@ -41,7 +41,6 @@ public class MainFrameController {
 
     /**
      * This method inserts a new record into "Booking" Table with the customer's id, flight's id and hotel's id
-     *
      * @param customer
      * @param flight
      * @param hotel
@@ -71,7 +70,7 @@ public class MainFrameController {
 
     /**
      * This is a helper method that GETs the CustomerId based on their email
-     * sql: that queries the "Customer" table to find the ID corresponding to the given
+     * sql
      * @param email
      * @return
      */

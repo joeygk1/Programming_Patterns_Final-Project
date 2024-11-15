@@ -10,7 +10,7 @@ public class Customer {
         this.name = name;
         this.email = email;
     }
-
+    //getters
     public int getId() {
         return id;
     }
@@ -20,7 +20,7 @@ public class Customer {
     public String getEmail() {
         return email;
     }
-
+    //setters
     public void setName(String name) {
         this.name = name;
     }

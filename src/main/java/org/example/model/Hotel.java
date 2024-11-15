@@ -10,7 +10,7 @@ public class Hotel {
         this.name = name;
         this.location = location;
     }
-
+    //getters and setters
     public int getHotelId() {
         return hotelId;
     }
