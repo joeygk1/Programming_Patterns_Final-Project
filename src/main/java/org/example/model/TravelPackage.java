@@ -12,7 +12,7 @@ public abstract class TravelPackage {
         this.price = price;
         this.availability = availability;
     }
-
+    //getters & setters
     public String getPackageID() {
         return packageID;
     }

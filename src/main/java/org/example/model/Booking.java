@@ -14,7 +14,7 @@ public class Booking {
         this.flight = flight;
         this.hotel = hotel;
     }
-
+    //getters
     public int getBookingId() {
         return bookingId;
     }
@@ -27,15 +27,11 @@ public class Booking {
     public Hotel getHotel() {
         return hotel;
     }
-
+    //setters
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-    public void setFlight(Flight flight) {
-        this.flight = flight;
-    }
-    public void setHotel(Hotel hotel) {
-        this.hotel = hotel;
-    }
+    public void setFlight(Flight flight) { this.flight = flight; }
+    public void setHotel(Hotel hotel) { this.hotel = hotel; }
 }
 

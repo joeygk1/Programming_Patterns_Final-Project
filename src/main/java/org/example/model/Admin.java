@@ -8,10 +8,11 @@ public class Admin extends User {
         this.adminLevel = adminLevel;
     }
 
+    //getter
     public String getAdminLevel() {
         return adminLevel;
     }
-
+    //setter
     public void setAdminLevel(String adminLevel) {
         this.adminLevel = adminLevel;
     }
