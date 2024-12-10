@@ -1,11 +1,12 @@
 package org.example.view;
 
 import org.example.controller.MainFrameController;
+import org.example.model.Database;
+import org.example.model.Flight;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.util.List;
 
 public class MainFrame extends JFrame {
     private MainFrameController controller;
@@ -38,15 +39,29 @@ public class MainFrame extends JFrame {
         nameText.setBounds(150, 20, 165, 25);
         panel.add(nameText);
 
+        // Fetching flights from the database
+        List<Flight> flights = Database.getFlights(); // Fetch data from DB
+
+// Example of populating a combo box with flight origin and destination
+        JComboBox<String> flightComboBox = new JComboBox<>();
+        for (Flight flight : flights) {
+            // Combine origin and destination as the display string
+            String flightInfo = flight.getOrigin() + " to " + flight.getDestination();
+            flightComboBox.addItem(flightInfo);
+        }
+        panel.add(flightComboBox);
+
+        flightComboBox.setBounds(150, 60, 165, 25);  // Adjust the position and size of the combo box
+        panel.add(flightComboBox);
+
         JButton bookButton = new JButton("Book");
-        bookButton.setBounds(10, 80, 150, 25);
+        bookButton.setBounds(10, 100, 150, 25);
         panel.add(bookButton);
 
-        bookButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                // Placeholder: You could gather data from the UI and pass it to the controller
-                JOptionPane.showMessageDialog(panel, "Booking Completed!");
-            }
+        bookButton.addActionListener(e -> {
+            // You can add actions when the button is clicked, e.g., opening a new form
+            AddCustomerForm addCustomerForm = new AddCustomerForm();
+            addCustomerForm.setVisible(true);
         });
     }
 }

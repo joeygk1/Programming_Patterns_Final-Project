@@ -16,6 +16,8 @@ public class Flight {
     public int getFlightId() {
         return flightId;
     }
+
+
     public String getOrigin() {
         return origin;
     }
