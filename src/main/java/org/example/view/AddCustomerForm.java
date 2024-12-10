@@ -1,7 +1,11 @@
 package org.example.view;
 
+import org.example.model.Database;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class AddCustomerForm extends JFrame {
     private JTextField firstNameField;
@@ -31,6 +35,22 @@ public class AddCustomerForm extends JFrame {
         add(new JLabel("Phone:"));
         add(phoneField);
         add(saveButton);
+
+        saveButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Retrieve input fields from the form
+                String name = firstNameField.getText() + " " + lastNameField.getText();
+                String email = emailField.getText();
+                String phone = phoneField.getText();
+
+                // Add the customer to the database
+                Database.addCustomer(name, email, phone);
+
+                // Close the form after saving
+                JOptionPane.showMessageDialog(null, "Customer saved successfully!");
+                dispose(); // Close the form
+            }
+        });
     }
 
     public JTextField getFirstNameField() {
@@ -53,4 +73,3 @@ public class AddCustomerForm extends JFrame {
         return saveButton;
     }
 }
-
